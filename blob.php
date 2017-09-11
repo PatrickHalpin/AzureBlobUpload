@@ -35,7 +35,7 @@ class Blob
     $conn="DefaultEndpointsProtocol=https;AccountName=phblobtest;AccountKey=5UV0NfyNudR3xKN+Q1ONDbp5e2Gool1E/fRI/HHGRXHeWvGJpwelYGE+F2xyVLNZ34USjREWDu2km1PuvxTQuw==";
     $blobRestProxy = ServicesBuilder::getInstance()->createBlobService($conn);
     //Open image that was recently uploaded
-    $content = fopen("Pictures/$name", "r");
+    $content = fopen("./Pictures/$name", "r");
     //Set blob name to same as the image
     $blob_name = $name;
     try

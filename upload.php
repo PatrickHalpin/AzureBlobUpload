@@ -3,7 +3,7 @@
 include 'blob.php';
 
 
-$target_dir = "Pictures/";
+$target_dir = "./Pictures/";
 $name=basename( $_FILES["fileToUpload"]["name"]);
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
@@ -89,10 +89,10 @@ else
   </div>
   </div>
   <div class="container-fluid">
-    
+
   <div class="row">
     <div class="col-xs-12 col-md-12 top">
-      <img class="img" src=Pictures/<?php echo $name ?>>
+      <img class="img" src=./Pictures/<?php echo $name ?>>
     </div>
   </div>
     <div class="row">
